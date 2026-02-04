@@ -1,41 +1,24 @@
-bicycles = ["trek", "cannondale", "all city"]
-print (bicycles[0])
-bicycles [0] = "giant"
-print(bicycles[0])
-bicycles .insert(1,"releigh")
-print (bicycles)
-bicycles.append (" marin")
-print (bicycles)
-print (bicycles.pop)
-print (bicycles)
-bicycles.sort
-print (bicycles)
-print (len(bicycles))
-
-print(bicycles[4])
-
-for bicyclebrand in bicycles: 
-    print("do you like " + bicyclebrand)
-    print ("I do too!")
-
-print ("finished")
-
-numbers = list(range(1,10))
-print(numbers)
-
-for number in numbers:
-    square = number ** 2
-    print (square)
-
-ns1 = numbers[2:3]
-ns2 = numbers[0:9:2]
+# Part 1 - Learning about Lists
+Tallest_Mountains = ["Mt. Everest", "K2", "Kangchenjunga", "Lhotse", "Makalu", "Cho Oyu"]
+print (Tallest_Mountains)
+ns1 = Tallest_Mountains[0:2]   
 print (ns1)
+ns2 = Tallest_Mountains[2:4]
 print (ns2)
+ns3 = Tallest_Mountains[4:6]
+print (ns3)
+print ("Finished")
 
-numbers2 = numbers[0:9]
-numbers2.append(10)
-print(numbers)
-print(numbers2)
-
-# bicycles = ("trek", "cannondale", "raleigh")
-# print(bicycles)
+# Part 2 - Learning about Tuples
+Limited_Menu = ("Braised Short Rib", "Seared Tuna", "Wagyu Beef", "French Onion Soup", "Fig Salad", "Crème Brûlée")
+print(Limited_Menu)
+# Removing Items from List
+menu_list = list(Limited_Menu)
+menu_list.remove("Wagyu Beef")
+menu_list.remove("Fig Salad")
+Updated_Limited_Menu = tuple(menu_list)
+print(Updated_Limited_Menu)
+# Adding Items to List
+updated_list = ["Duck Breast", "Lobster Tail"] + menu_list
+Final_Limited_Menu = tuple(updated_list)
+print(Final_Limited_Menu)
